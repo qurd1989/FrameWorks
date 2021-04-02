@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <test name="annotationsDemo">
+        <classes>
+
+            <class name="AllSAmplesIncludedHere.TestCase1">
+
+                <methods>
+                    <exclude name="case1"></exclude>
+                    <include name="case2"></include>
+                </methods>
+            </class>
+            <class name="AllSAmplesIncludedHere.TestCase2"></class>
+
+            <class name="AllSAmplesIncludedHere.TestCase2">
+
+                <methods>
+                    <exclude name="case4"></exclude>
+                    <include name="case5"></include>
+                </methods>
+            </class>
+            <class name="AllSAmplesIncludedHere.TestCase2"></class>
+
+
+        </classes>
+
+</test>
+
+</suite>
